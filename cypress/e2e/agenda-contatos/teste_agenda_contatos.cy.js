@@ -1,6 +1,6 @@
 /// <reference types="cypress"/> 
 
-describe("Testando Home", () => {
+describe("Testando Contatos", () => {
     beforeEach(() => {
         cy.visit('https://agenda-contatos-react.vercel.app/')
     })
@@ -10,7 +10,6 @@ describe("Testando Home", () => {
         cy.get('input[type="email"]').type('nome1@email.com');
         cy.get('input[type="tel"]').type('34 0 0000-0000'); 
         cy.get('.adicionar').click();
-        
     });
 
     it("Editar registro", () => {
